@@ -1,1 +1,3 @@
-/build
+
+# Ignore generated app build files
+/build/
