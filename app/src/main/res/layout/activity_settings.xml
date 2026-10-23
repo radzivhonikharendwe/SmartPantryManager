@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="20dp" android:background="@color/pantry_background">
+    <ImageView android:layout_width="112dp" android:layout_height="86dp" android:layout_gravity="center_horizontal" android:src="@drawable/pantry_hero" android:contentDescription="Fresh vegetables illustration"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Settings" android:textColor="@color/pantry_green" android:textSize="27sp" android:textStyle="bold" android:gravity="center" android:paddingBottom="16dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp" android:background="@drawable/card_background">
+        <CheckBox android:id="@+id/checkExpiryAlerts" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enable expiring-soon alert preference" android:textColor="@color/pantry_text"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"  android:textColor="@color/pantry_muted" android:textSize="14sp" android:paddingTop="10dp"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnBackSettings" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Back to pantry" android:layout_marginTop="14dp"/>
+    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/btnNavPantry" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Pantry"/>
+        <Button android:id="@+id/btnNavRecipes" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Recipes"/>
+        <Button android:id="@+id/btnNavSettings" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Settings"/>
+    </LinearLayout>
+</LinearLayout>

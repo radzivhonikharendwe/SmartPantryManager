@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/pantry_background">
+
+    <!-- Header card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/card_background"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SMART PANTRY"
+                android:textColor="@color/pantry_green"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fresh ideas.\nLess waste."
+                android:textColor="@color/pantry_text"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:paddingTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Make something delicious with what you have."
+                android:textColor="@color/pantry_muted"
+                android:textSize="13sp"
+                android:paddingTop="5dp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="6dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Fresh vegetables in a bowl"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+    <!-- Main action buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="14dp">
+
+        <Button
+            android:id="@+id/btnAddIngredient"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/pantry_mint"
+            android:text="+ Ingredient"
+            android:textColor="@color/pantry_green_dark"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:minWidth="0dp"
+            android:paddingHorizontal="2dp"/>
+
+        <Button
+            android:id="@+id/btnSuggestions"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            android:backgroundTint="@color/pantry_mint"
+            android:text="Find Recipes"
+            android:textColor="@color/pantry_green_dark"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:minWidth="0dp"
+            android:paddingHorizontal="2dp"/>
+
+        <Button
+            android:id="@+id/btnAddRecipe"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@color/pantry_green"
+            android:text="+ Add Recipe"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:minWidth="0dp"
+            android:paddingHorizontal="2dp"/>
+
+    </LinearLayout>
+
+    <!-- Pantry heading -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="18dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MY PANTRY"
+            android:textColor="@color/pantry_green_dark"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap an item to edit"
+            android:textColor="@color/pantry_muted"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <!-- Pantry items -->
+    <ListView
+        android:id="@+id/listPantry"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:padding="6dp"
+        android:divider="@color/pantry_border"
+        android:dividerHeight="1dp"
+        android:clipToPadding="false"/>
+
+    <!-- Bottom navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btnNavPantry"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/pantry_green"
+            android:text="Pantry"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btnNavRecipes"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            android:backgroundTint="@color/pantry_mint"
+            android:text="Recipes"
+            android:textColor="@color/pantry_green_dark"
+            android:textAllCaps="false"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btnNavSettings"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@color/pantry_mint"
+            android:text="Settings"
+            android:textColor="@color/pantry_green_dark"
+            android:textAllCaps="false"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/pantry_background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <ImageView android:layout_width="120dp" android:layout_height="88dp" android:layout_gravity="center_horizontal" android:src="@drawable/logo" android:contentDescription="Illustration of a prepared meal"/>
+        <TextView android:id="@+id/txtRecipeName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Recipe name" android:textColor="@color/pantry_green" android:textSize="27sp" android:textStyle="bold" android:gravity="center" android:paddingBottom="16dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="INGREDIENTS" android:textColor="@color/pantry_green_dark" android:textStyle="bold" android:textSize="15sp" android:padding="10dp" android:background="@color/pantry_mint"/>
+        <TextView android:id="@+id/txtRecipeIngredients" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/pantry_text" android:textSize="16sp" android:padding="14dp" android:background="@drawable/card_background" android:paddingBottom="18dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="PREPARATION METHOD" android:textColor="@color/pantry_green_dark" android:textStyle="bold" android:textSize="15sp" android:padding="10dp" android:layout_marginTop="14dp" android:background="@color/pantry_mint"/>
+        <TextView android:id="@+id/txtRecipeMethod" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/pantry_text" android:textSize="16sp" android:padding="14dp" android:background="@drawable/card_background" android:paddingBottom="18dp"/>
+        <Button android:id="@+id/btnBackDetail" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Back" android:layout_marginTop="14dp"/>
+    </LinearLayout>
+</ScrollView>

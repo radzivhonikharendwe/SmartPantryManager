@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="@color/pantry_background">
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"
+        android:contentDescription="Food bowl illustration" />
+
+    <!-- Page title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipe Collection"
+        android:textColor="@color/pantry_green"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="6dp" />
+
+    <!-- Description -->
+
+    <!-- Recipe list -->
+    <TextView
+        android:layout_width="373dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:paddingBottom="16dp"
+        android:text="Choose a recipe to explore its ingredients and cooking method."
+        android:textColor="@color/pantry_muted"
+        android:textSize="14sp" />
+
+    <!-- Back button -->
+    <ListView
+        android:id="@+id/listAllRecipes"
+        android:layout_width="396dp"
+        android:layout_height="389dp"
+        android:layout_marginBottom="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"
+        android:clipToPadding="false"
+        android:divider="@color/pantry_border"
+        android:dividerHeight="1dp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnBackRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="← Back to Suggestions"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/pantry_green_dark"
+        android:backgroundTint="@color/pantry_mint" />
+
+</LinearLayout>
